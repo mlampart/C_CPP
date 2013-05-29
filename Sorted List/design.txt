@@ -1,0 +1,13 @@
+This is essentially a sorted linked list
+
+Repository_init:
+	this method was meant to initialize the list. So I simply created a dummy element that is going to represent the head from here on out, to get rid of any special cases.
+
+Repository_invert:
+	This method first creates a pointer that first points to the head element. If the head doesn't point to null, then the  pointer is entered into a while loop, checking if the key of each element is greater than or equal to the key in question. If it's equal, then the element is removed, if it's greater, then the pointer of the new element to be added is pointed to the next element, and the previous element is pointed to the new element, effectively inserting the element in the right place. If the number doesn't exist or the number is larger than every other, then it is added to the end.
+
+Repository_get:
+	This method checks each element in the list to see if an element containing a specific key exists. If so, it replaces *data with the data that is contained in the element.
+
+Repository_print:
+	This method first prints the size and counter variables. Then it enters a while loop, checking each element and printing the values of key and data. 
